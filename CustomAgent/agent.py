@@ -1,5 +1,5 @@
 from .tools import search, calculator, get_current_datetime
-from .config import SYSTEM_PROMPT
+from .prompts import SYSTEM_PROMPT
 from groq import Groq
 import re
 from dotenv import load_dotenv
