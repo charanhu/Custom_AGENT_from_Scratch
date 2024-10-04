@@ -29,7 +29,7 @@ This repository contains an AI assistant that can perform searches, calculations
 
 3. Run the example queries:
    ```bash
-   python src/main.py
+   python main.py
    ```
 
 ## Directory Structure
