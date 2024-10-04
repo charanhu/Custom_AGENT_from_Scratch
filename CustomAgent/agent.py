@@ -3,6 +3,7 @@ from .config import SYSTEM_PROMPT
 from groq import Groq
 import re
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # Initialize Groq client
