@@ -1,12 +1,13 @@
-import re
+from .tools import search, calculator, get_current_datetime
+from .config import SYSTEM_PROMPT
 from groq import Groq
-from .tools import search, calculator
-from config import SYSTEM_PROMPT
+import re
 from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize Groq client
 client = Groq()
+
 
 def get_streaming_response(messages):
     completion = client.chat.completions.create(
@@ -26,6 +27,7 @@ def get_streaming_response(messages):
         print(content, end="")
     print()  # New line after response
     return full_response
+
 
 def stream_agent(prompt):
     messages = [

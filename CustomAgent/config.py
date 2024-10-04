@@ -1,17 +1,9 @@
-from datetime import datetime
+from .tools import get_current_datetime
 
 # Get current date and time for system prompt
-def get_current_datetime(format_string=None):
-    current = datetime.now()
-    if format_string:
-        try:
-            return current.strftime(format_string)
-        except ValueError:
-            return str(current)
-    return str(current)
-
 CURRENT_DATETIME = get_current_datetime()
 
+# Improved system prompt
 SYSTEM_PROMPT = f"""
 You are an AI assistant with access to current information. The current date and time is: {CURRENT_DATETIME}
 
