@@ -18,8 +18,8 @@ This repository contains an AI assistant that can perform searches, calculations
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ai-assistant-tools.git
-   cd ai-assistant-tools
+   git clone https://github.com/charanhu/Custom_AGENT_from_Scratch
+   cd Custom_AGENT_from_Scratch
    ```
 
 2. Install the required packages:
